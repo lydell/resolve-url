@@ -35,6 +35,7 @@ resolveUrl("//cdn.example.com/jquery.js")
 Installation
 ============
 
+- `npm install resolve-url`
 - `bower install resolve-url`
 - `component install lydell/resolve-url`
 
