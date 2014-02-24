@@ -15,12 +15,10 @@
   },
   "devDependencies": {
     "testling": "~1.6.0",
-    "mocha": "~1.17.1",
-    "chai": "~1.9.0",
-    "jshint": "~2.4.3"
+    "jshint": "~2.4.3",
+    "tape": "~2.5.0"
   },
   "testling": {
-    "harness": "mocha",
     "files": "test/*.js",
     "browsers": [
       "ie/8..latest",
