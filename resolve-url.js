@@ -1,4 +1,5 @@
 // Copyright 2014 Simon Lydell
+// X11 (“MIT”) Licensed. (See LICENSE.)
 
 void (function(root, factory) {
   if (typeof define === "function" && define.amd) {
