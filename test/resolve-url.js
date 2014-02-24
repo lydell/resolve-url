@@ -14,6 +14,8 @@ test("resolveUrl", function(t) {
 
   t.equal(typeof resolveUrl, "function", "is a function")
 
+  t["throws"](resolveUrl, /at least one argument/, "throws with no arguments")
+
   // Resolve like Node.js’ `url.resolve` would in series
   function testResolve() {
     var expected = window.location.toString()
@@ -22,8 +24,6 @@ test("resolveUrl", function(t) {
     }
     t.equal(resolveUrl.apply(null, arguments), expected, arguments[index-1])
   }
-
-  testResolve()
 
   testResolve("remove")
 

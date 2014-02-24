@@ -11,9 +11,6 @@ var resolveUrl = require("resolve-url")
 window.location
 // https://example.com/articles/resolving-urls/edit
 
-resolveUrl()
-// https://example.com/articles/resolving-urls/edit
-
 resolveUrl("remove")
 // https://example.com/articles/resolving-urls/remove
 
@@ -47,7 +44,7 @@ Usage
 
 ### `resolveUrl(...urls)` ###
 
-Pass any number of urls. Resolves the last one to an absolute url, using the
+Pass one or more urls. Resolves the last one to an absolute url, using the
 previous ones and `window.location`.
 
 It’s like starting out on `window.location`, and then clicking links with the

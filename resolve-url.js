@@ -14,10 +14,14 @@ void (function(root, factory) {
   function resolveUrl(/* ...urls */) {
     var numUrls = arguments.length
 
+    if (numUrls === 0) {
+      throw new Error("resolveUrl requires at least one argument; got none.")
+    }
+
     var base = document.createElement("base")
     base.href = arguments[0] || ""
 
-    if (numUrls <= 1) {
+    if (numUrls === 1) {
       return base.href
     }
 
