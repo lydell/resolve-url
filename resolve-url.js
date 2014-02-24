@@ -19,7 +19,7 @@ void (function(root, factory) {
     }
 
     var base = document.createElement("base")
-    base.href = arguments[0] || ""
+    base.href = arguments[0]
 
     if (numUrls === 1) {
       return base.href
