@@ -20,7 +20,7 @@ test("resolveUrl", function(t) {
     for (var index = 0, length = arguments.length; index < length; index++) {
       expected = url.resolve(expected, arguments[index])
     }
-    t.equal(resolveUrl.apply(null, arguments), expected, arguments.length)
+    t.equal(resolveUrl.apply(null, arguments), expected, arguments[index-1])
   }
 
   testResolve()
