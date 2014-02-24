@@ -66,8 +66,8 @@ Also note that this functions deals with urls, not paths, so in that respect it
 has more in common with Node.js’ [`url.resolve`]. But the arguments are more
 like [`path.resolve`].
 
-[`path.resolve`]: http://nodejs.org/docs/latest/api/path.html#path_path_resolve_from_to
-[`url.resolve`]: http://nodejs.org/docs/latest/api/url.html#url_url_resolve_from_to
+[`path.resolve`]: http://nodejs.org/api/path.html#path_path_resolve_from_to
+[`url.resolve`]: http://nodejs.org/api/url.html#url_url_resolve_from_to
 
 
 License
