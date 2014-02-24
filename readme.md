@@ -70,6 +70,13 @@ like [`path.resolve`].
 [`url.resolve`]: http://nodejs.org/api/url.html#url_url_resolve_from_to
 
 
+Tests
+=====
+
+Run `npm test`, which lints the code and then gives you a link to open in a
+browser of choice (using `testling`).
+
+
 License
 =======
 
