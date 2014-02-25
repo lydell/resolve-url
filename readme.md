@@ -15,7 +15,7 @@ resolveUrl("remove")
 // https://example.com/articles/resolving-urls/remove
 
 resolveUrl("/static/scripts/app.js")
-// https://example.com/scripts/app.js
+// https://example.com/static/scripts/app.js
 
 // Imagine /static/scripts/app.js contains `//# sourceMappingURL=../source-maps/app.js.map`
 resolveUrl("/static/scripts/app.js", "../source-maps/app.js.map")
