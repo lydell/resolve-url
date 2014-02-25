@@ -26,6 +26,9 @@ resolveUrl("/static/scripts/app.js", "../source-maps/app.js.map", "../coffee/app
 
 resolveUrl("//cdn.example.com/jquery.js")
 // https://cdn.example.com/jquery.js
+
+resolveUrl("http://foo.org/")
+// http://foo.org/
 ```
 
 
