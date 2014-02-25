@@ -9,11 +9,9 @@ var resolveUrl = require("../")
 
 test("resolveUrl", function(t) {
 
-  t.plan(8)
+  t.plan(7)
 
   t.equal(typeof resolveUrl, "function", "is a function")
-
-  t["throws"](resolveUrl, /at least one argument/, "throws with no arguments")
 
   t.equal(
     resolveUrl("https://example.com/"),
@@ -45,6 +43,28 @@ test("resolveUrl", function(t) {
   t.equal(
     resolveUrl(loc, "//cdn.example.com/jquery.js"),
     "https://cdn.example.com/jquery.js"
+  )
+
+})
+
+test("edge cases", function(t) {
+
+  t.plan(4)
+
+  t["throws"](resolveUrl, /at least one argument/, "throws with no arguments")
+
+  var accidentallyUndefined
+  var result
+  t.doesNotThrow(
+    function() { result = resolveUrl(accidentallyUndefined) },
+    "undefined is still an argument"
+  )
+  t.ok(result.match(/\/undefined$/), "undefined is stringified")
+
+  t.equal(
+    resolveUrl("http://foo.org/test", undefined, {}, ["a/b"], null),
+    "http://foo.org/a/null",
+    "arguments are stringified"
   )
 
 })
