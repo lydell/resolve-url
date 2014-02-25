@@ -1,6 +1,6 @@
 {
   "name": "resolve-url",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Like Node.js’ `path.resolve`/`url.resolve` for the browser.",
   "authors": ["Simon Lydell"],
   "license": "MIT",
