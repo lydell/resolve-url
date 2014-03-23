@@ -1,15 +1,15 @@
 {
   "name": "resolve-url",
   "version": "0.2.1",
-  "description": "Like Node.js’ `path.resolve`/`url.resolve` for the browser.",
   "author": "Simon Lydell",
   "license": "MIT",
-  "main": "resolve-url.js",
-  "repository": "lydell/resolve-url",
+  "description": "Like Node.js’ `path.resolve`/`url.resolve` for the browser.",
   "keywords": [
     "resolve",
     "url"
   ],
+  "main": "resolve-url.js",
+  "repository": "lydell/resolve-url",
   "scripts": {
     "test": "jshint resolve-url.js test/ && testling -u"
   },
