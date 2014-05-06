@@ -70,11 +70,25 @@ like [`path.resolve`].
 [`url.resolve`]: http://nodejs.org/api/url.html#url_url_resolve_from_to
 
 
-Tests
-=====
+Development
+===========
 
-Run `npm test`, which lints the code and then gives you a link to open in a
-browser of choice (using `testling`).
+Tests
+-----
+
+First off, run `npm install` to install testing modules.
+
+`npm test` lints the code and then gives you a link to open in a browser of
+choice (using `testling`).
+
+x-package.json5
+---------------
+
+package.json, component.json and bower.json are all generated from
+x-package.json5 by using [`xpkg`]. Only edit x-package.json5, and remember to
+run `xpkg` before commiting!
+
+[`xpkg`]: https://github.com/kof/node-xpkg
 
 
 License
