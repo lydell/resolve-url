@@ -62,7 +62,7 @@ actual `<a>` gets its `href` attribute set for each url! This means that the
 url resolution of the browser is used, which makes this module really
 light-weight.
 
-Also note that this functions deals with urls, not paths, so in that respect it
+Also note that this function deals with urls, not paths, so in that respect it
 has more in common with Node.js’ [`url.resolve`]. But the arguments are more
 like [`path.resolve`].
 
