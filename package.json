@@ -18,6 +18,8 @@
     "jshint": "~2.4.3",
     "tape": "~2.5.0"
   },
+  "files": [
+  ],
   "testling": {
     "files": "test/*.js",
     "browsers": [
