@@ -1,13 +1,7 @@
 Deprecated
 ==========
 
-Is npm bugging you about this module being deprecated? You are probably depending on this module via the [source-map-resolve](https://github.com/lydell/source-map-resolve) package. For example:
-
-```
-nanomatch > snapdragon > source-map-resolve > resolve-url
-```
-
-The solution is to make your dependency chain update to source-map-resolve version 0.6.0 or later, or switch to dependencies not using source-map-resolve at all.
+Is npm bugging you about this module being deprecated? You are probably depending on this module via the [source-map-resolve](https://github.com/lydell/source-map-resolve) package, which is [deprecated too](https://github.com/lydell/source-map-resolve#deprecated).
 
 If you are looking for a way to resolve URLs in the browser, use [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL).
 
